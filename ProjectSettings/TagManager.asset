@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Interactable
   - Fire
+  - RayCast
   layers:
   - Default
   - TransparentFX

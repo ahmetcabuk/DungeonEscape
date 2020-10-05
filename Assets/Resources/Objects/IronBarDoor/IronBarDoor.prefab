@@ -848,8 +848,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 2.0568562, z: 1.3873608}
-  m_Center: {x: 0.0036137104, y: -0.07548979, z: 0.4653746}
+  m_Size: {x: 0.057407618, y: 2.0568562, z: 0.97479725}
+  m_Center: {x: 0.000081419945, y: -0.07548979, z: 0.45670724}
 --- !u!114 &590423833757914617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +865,7 @@ MonoBehaviour:
   interactable: 0
   doorAngle: 0
   openingTime: 0
+  doorFirstAngle: 0
 --- !u!1 &7307353631935096994
 GameObject:
   m_ObjectHideFlags: 0

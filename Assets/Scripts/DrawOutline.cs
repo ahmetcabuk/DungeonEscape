@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(BorderOutline))]
 public class DrawOutline : MonoBehaviour
@@ -12,18 +10,16 @@ public class DrawOutline : MonoBehaviour
         outline = GetComponent<BorderOutline>();
         outline.enabled = false;
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "RayCast")
         {
             outline.enabled = true;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "RayCast")
         {
             outline.enabled = false;
         }
