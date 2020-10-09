@@ -10,7 +10,6 @@ public class PickUpTorch : PickUpBase
     {
         if (!handTorch.activeInHierarchy)
         {
-            Debug.Log("Torch aldin");
             handTorch.SetActive(true);
             Destroy(transform.parent.gameObject);
         }

@@ -7,8 +7,8 @@ public class DoorOpen : InteractableBase
 {
     public float doorAngle;
     public float openingTime = 3;
-    private bool isOpen = false;
     public float doorFirstAngle;
+    private bool isOpen = false;
 
 
     void Start()
