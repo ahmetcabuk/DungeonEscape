@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UseItem : InteractableBase
+public class LevelDoor : InteractableBase
 {
+    public GameObject levelEndImage;
     public Sprite requireItemSprite;
-    public bool shouldDestroy = false;
+    private Animator levelEndAnimator;
     public bool itemUsed = false;
+
+    private void Start()
+    {
+        levelEndAnimator = GetComponent<Animator>();
+    }
 
     public override void Interact()
     {
@@ -21,11 +26,8 @@ public class UseItem : InteractableBase
                     SortItems.spriteList.RemoveAt(i);
                     itemUsed = true;
 
-                    if (shouldDestroy)
-                    {
-                        Destroy(gameObject);
-                    }
-
+                    levelEndImage.SetActive(true);
+                    Debug.Log("Level Complete");
                 }
             }
         }
