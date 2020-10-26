@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5974420696698735381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5974420696698735379}
+  - component: {fileID: 5974420696698735380}
+  - component: {fileID: 5181667212762517155}
+  m_Layer: 0
+  m_Name: AudioManagerGO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5974420696698735379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974420696698735381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5974420696698735380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974420696698735381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a019cfca53cee7f4a8b9812bc887f968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nowPlayingList: []
+  nowPlayingBackgroundClip: {fileID: 0}
+  audioClipsSO: {fileID: 11400000, guid: 22b962a6b0d90854eb6c01a95f672ce0, type: 2}
+  mainMixer: {fileID: 24100000, guid: faaa7c760b85ae34cadce5a344c3ac80, type: 2}
+  masterGroup: {fileID: 24300002, guid: faaa7c760b85ae34cadce5a344c3ac80, type: 2}
+  musicGroup: {fileID: 4570751025240322950, guid: faaa7c760b85ae34cadce5a344c3ac80,
+    type: 2}
+  sfxGroup: {fileID: -8407035874101110823, guid: faaa7c760b85ae34cadce5a344c3ac80,
+    type: 2}
+  masterGroupExposedVolumeName: MasterVolume
+  musicGroupExposedVolumeName: MusicVolume
+  sfxGroupExposedVolumeName: SFXVolume
+  audioSourceHolderGO: {fileID: 3491524075974902851, guid: 936b5aac18178a14da663e584a32e7a1,
+    type: 3}
+--- !u!114 &5181667212762517155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974420696698735381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5c7c4d7b56dc94099aa820cb662efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
