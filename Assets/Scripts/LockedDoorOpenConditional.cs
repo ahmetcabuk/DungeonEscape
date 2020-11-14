@@ -10,6 +10,7 @@ public class LockedDoorOpenConditional : InteractableBase
     public float doorAngle;
     public float openingTime = 3;
     public float doorFirstAngle;
+    public string doorOpenAudioName;
     private bool isOpen = false;
 
     void Start()
@@ -32,6 +33,11 @@ public class LockedDoorOpenConditional : InteractableBase
                 CloseGate();
             }
         }
+
+        else
+        {
+            AudioManager.Instance?.PlaySFXAudio2D("LockedDoor");
+        }
     }
 
     private void CloseGate()
@@ -44,5 +50,6 @@ public class LockedDoorOpenConditional : InteractableBase
     {
         transform.DORotate(new Vector3(0, doorAngle, 0), openingTime);
         isOpen = true;
+        AudioManager.Instance?.PlaySFXAudio3D(doorOpenAudioName, gameObject.transform.position);
     }
 }

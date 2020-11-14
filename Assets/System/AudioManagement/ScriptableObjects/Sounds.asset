@@ -13,13 +13,23 @@ MonoBehaviour:
   m_Name: Sounds
   m_EditorClassIdentifier: 
   AudioClips:
-  - key: Button
-    value: {fileID: 0}
-  - key: 
-    value: {fileID: 0}
-  - key: 
-    value: {fileID: 0}
-  - key: 
-    value: {fileID: 0}
-  - key: 
-    value: {fileID: 0}
+  - key: Fire
+    value: {fileID: 8300000, guid: 271c1c031e22d874aaaf53d35318ba4f, type: 3}
+  - key: WoodDoorOpen
+    value: {fileID: 8300000, guid: 98e8d881d0233df4cae1e444d7e7aea0, type: 3}
+  - key: CaveAmb
+    value: {fileID: 8300000, guid: 6aff382c5cbff3f448daad14c9077bd7, type: 3}
+  - key: WindAmb
+    value: {fileID: 8300000, guid: 0755e0fc4de7f864d865f9164be720e0, type: 3}
+  - key: AxeHit
+    value: {fileID: 8300000, guid: 1cc2a7568d9d6564599ed1f568b918d0, type: 3}
+  - key: IronDoorOpen
+    value: {fileID: 8300000, guid: 8f75c07239cd83645959e98f22037757, type: 3}
+  - key: PickUpItem
+    value: {fileID: 8300000, guid: 26d567ea23c374341a9c41333d1bb184, type: 3}
+  - key: Unlock
+    value: {fileID: 8300000, guid: e83b4285f681e1441ab95ea9ff9f1314, type: 3}
+  - key: LockedDoor
+    value: {fileID: 8300000, guid: 28e0effcdacde1c489163c38f9c2f76c, type: 3}
+  - key: Hearthbeat
+    value: {fileID: 8300000, guid: 66d85f7f052ab4145a726b67ce68fde9, type: 3}

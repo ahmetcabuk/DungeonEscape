@@ -25,12 +25,14 @@ public class LevelDoor : InteractableBase
                     SortItems.itemSlotList[SortItems.spriteList.Count - 1].color = new Color(SortItems.itemSlotList[i].color.r, SortItems.itemSlotList[i].color.g, SortItems.itemSlotList[i].color.b, 0f);
                     SortItems.spriteList.RemoveAt(i);
                     itemUsed = true;
+                    AudioManager.Instance?.PlaySFXAudio2D("Unlock");
 
                     levelEndImage.SetActive(true);
                     Debug.Log("Level Complete");
                 }
             }
         }
-    }
 
+        else AudioManager.Instance?.PlaySFXAudio2D("LockedDoor");
+    }
 }

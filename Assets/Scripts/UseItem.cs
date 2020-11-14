@@ -8,6 +8,7 @@ public class UseItem : InteractableBase
     public Sprite requireItemSprite;
     public bool shouldDestroy = false;
     public bool itemUsed = false;
+    public string useItemAudioName;
 
     public override void Interact()
     {
@@ -17,6 +18,7 @@ public class UseItem : InteractableBase
             {
                 if (SortItems.spriteList[i] == requireItemSprite)
                 {
+                    AudioManager.Instance?.PlaySFXAudio2D(useItemAudioName);
                     SortItems.itemSlotList[SortItems.spriteList.Count - 1].color = new Color(SortItems.itemSlotList[i].color.r, SortItems.itemSlotList[i].color.g, SortItems.itemSlotList[i].color.b, 0f);
                     SortItems.spriteList.RemoveAt(i);
                     itemUsed = true;

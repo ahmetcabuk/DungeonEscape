@@ -8,6 +8,7 @@ public class DoorOpen : InteractableBase
     public float doorAngle;
     public float openingTime = 3;
     public float doorFirstAngle;
+    public string doorOpenAudioName;
     private bool isOpen = false;
 
 
@@ -38,5 +39,6 @@ public class DoorOpen : InteractableBase
     {
         transform.DORotate(new Vector3(0, doorAngle, 0), openingTime);
         isOpen = true;
+        AudioManager.Instance?.PlaySFXAudio3D(doorOpenAudioName, gameObject.transform.position);
     }
 }
